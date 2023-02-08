@@ -34,7 +34,7 @@ const Home: NextPage = () => {
   }
   let text = desc||defultDesc
   // Generate a business email in UK English that is friendly, but still professional and appropriate for the workplace. The email topic is:
-  const prompt = `Generate a business email in ${promptObj[lang]} that is friendly, but still professional and appropriate for the workplace. The email topic is:${text}${text.slice(-1) === "." ? "" : "."}`
+  const prompt = ``
 
   const generateDesc = async (e: any) => {
     e.preventDefault();
