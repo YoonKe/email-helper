@@ -78,7 +78,7 @@ const Home: NextPage = () => {
   return (
     <div className="flex max-w-5xl mx-auto flex-col items-center justify-center py-2 min-h-screen">
       <Head>
-        <title>Email Generator</title>
+        <title>ChatGPT</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -86,7 +86,7 @@ const Home: NextPage = () => {
        
 
         <h1 className="sm:text-3xl text-2xl max-w-1xl font-bold text-slate-900">
-          Generate your business emails in seconds
+          输入描述，等待返回
         </h1>
         {/* <p className="text-slate-500 mt-5">18,167 bios generated so far.</p> */}
         <div className="max-w-xl w-full">
@@ -98,7 +98,7 @@ const Home: NextPage = () => {
               alt="1 icon"
             />
             <p className="text-left font-medium">
-              Write a few sentences about your desired email.
+              描述内容
             </p>
           </div>
           <textarea
@@ -123,7 +123,7 @@ const Home: NextPage = () => {
               className="bg-black rounded-xl text-white font-medium px-4 py-2 sm:mt-4 mt-3 hover:bg-black/80 w-full"
               onClick={(e) => generateDesc(e)}
             >
-              Generate your email &rarr;
+              发送 &rarr;
             </button>
           )}
           {loading && (
@@ -148,7 +148,7 @@ const Home: NextPage = () => {
                 <>
                   <div>
                     <h2 className="sm:text-4xl text-3xl font-bold text-slate-900 mx-auto">
-                      Your generated email
+                      返回内容
                     </h2>
                   </div>
                   <div className="space-y-8 flex flex-col items-center justify-center max-w-xl mx-auto  whitespace-pre-wrap">
